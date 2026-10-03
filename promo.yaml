@@ -1,0 +1,75 @@
+# Manifiesto para Promo Studio: describe Alto las Flores para generar su contenido de Instagram.
+# Ver github.com/patriciobo/promo-studio (asistente, validación y documentación de cada campo).
+name: Alto las Flores
+url: https://altolasflores.com.ar
+tagline: Cabañas con pileta y parque en Santa Rosa de Calamuchita, Córdoba
+description: >-
+  Complejo de cabañas en una zona tranquila de Santa Rosa de Calamuchita, con fácil acceso a compras
+  diarias, restaurantes y el centro de la ciudad. Cabañas de dos plantas con cocina equipada, comedor,
+  habitación matrimonial y habitación con cuchetas, Wi-Fi y televisión en todas las cabañas. Parque
+  amplio con pileta, sombrillas de paja, parrilla y juegos para chicos. A 5 minutos de la playa Mate de
+  Luna, 15 del centro de Santa Rosa, 20 de Villa General Belgrano y 25 de Villa Yacanto. Las consultas y
+  reservas se hacen por WhatsApp.
+category: Alojamiento turístico - cabañas
+audience:
+  countries: [AR]
+  age: [25, 60]
+  interests: [turismo, escapadas de fin de semana, vacaciones en familia, sierras de Córdoba, naturaleza]
+  description: >-
+    familias y parejas de Argentina que buscan una escapada o vacaciones tranquilas en las sierras de
+    Córdoba, con pileta y parque para los chicos, cerca del río y de Villa General Belgrano
+languages: [es]
+tone: cálido, tranquilo y cercano, en español rioplatense con voseo; frases cortas que invitan a descansar
+brand:
+  colors: ["#2e5a3a", "#f7f6f2", "#1b1f1a", "#e3ebe2"]
+  font: Manrope
+  logo: assets/img/logo.png
+  imageStyle: >-
+    soft editorial illustration of the Calamuchita valley hills in Córdoba, Argentina, green sierras,
+    river, native trees and wildflowers, warm natural daylight, calm and airy, muted green and cream
+    palette, not a photo, no buildings or cabins, no people's faces, no text
+features:
+  - Pileta con reposeras y sombrillas de paja
+  - Parque amplio con juegos para chicos
+  - Parrilla para asados al aire libre
+  - Cocina equipada con heladera, horno y microondas
+  - Wi-Fi y TV en todas las cabañas
+  - Habitación matrimonial y habitación con cuchetas
+  - A 5 minutos de la playa Mate de Luna y 20 de Villa General Belgrano
+screenshots: # fotos reales del complejo (las mismas de la web)
+  - assets/img/fotos/pileta.webp
+  - assets/img/fotos/parque-cabanas.webp
+  - assets/img/fotos/exterior-cabana.webp
+  - assets/img/fotos/comedor.webp
+  - assets/img/fotos/cocina.webp
+  - assets/img/fotos/habitacion-matrimonial.webp
+  - assets/img/fotos/habitacion-cuchetas.webp
+  - assets/img/fotos/sombrillas-noche.webp
+  - assets/img/fotos/pileta-atardecer.webp
+  - assets/img/fotos/juegos.webp
+  - assets/img/fotos/parrilla-fuego.webp
+  - assets/img/fotos/flores-jardin.webp
+pillars: [las cabañas, pileta y parque, escapadas por Calamuchita, descanso en las sierras, planes en familia]
+hashtags:
+  - "#santarosadecalamuchita"
+  - "#calamuchita"
+  - "#cabañas"
+  - "#sierrasdecordoba"
+  - "#turismocordoba"
+  - "#villageneralbelgrano"
+  - "#escapada"
+avoid:
+  - inventar precios, tarifas, promociones, descuentos o disponibilidad de fechas
+  - inventar servicios que no están en la lista (aire acondicionado, desayuno, mascotas, spa, etc.)
+  - inventar reseñas, testimonios, huéspedes, premios o cantidad de cabañas
+  - mostrar imágenes generadas de las cabañas, habitaciones o la pileta como si fueran fotos reales
+  - prometer clima, temperatura del agua o estado del río
+cta: Consultá disponibilidad por WhatsApp (link en la bio)
+location: Santa Rosa de Calamuchita, Córdoba, Argentina
+links:
+  - { label: Consultar por WhatsApp, url: "https://wa.me/5493512094909" }
+  - { label: Ver fotos y ubicación, url: "https://altolasflores.com.ar" }
+  - { label: Cómo llegar, url: "https://www.google.com/maps/search/?api=1&query=Caba%C3%B1as+Alto+las+Flores+Santa+Rosa+de+Calamuchita" }
+contact:
+  whatsapp: "+5493512094909"
+cadence: { feed: 3, reels: 1, stories: 2 }
