@@ -1,781 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="no-js">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+			name="description"
+			content="Cabañas Alto las Flores en Santa Rosa de Calamuchita, Córdoba. Pileta, parque, Wi-Fi y TV en todas las cabañas. Reservá por WhatsApp."
 		/>
-		<meta name="description" content="" />
-		<meta name="author" content="" />
-		<title>Alto las Flores</title>
-		<!-- Favicon-->
+		<meta name="theme-color" content="#f7f6f2" />
+		<title>Alto las Flores · Cabañas en las sierras</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!-- Font Awesome icons (free version)-->
-		<script
-			src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
-			type="text/css"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<!-- Core theme CSS (includes Bootstrap)-->
+		<link rel="preload" as="image" href="assets/img/portfolio/parque.webp" />
 		<link href="css/styles.css" rel="stylesheet" />
+		<script>document.documentElement.className = "js";</script>
 	</head>
-	<body id="page-top">
-		<!-- Navigation-->
-		<nav
-			class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-			id="mainNav"
-		>
-			<div class="container">
-				<a class="navbar-brand" href="#page-top">Alto las Flores</a>
+	<body>
+		<a class="skip-link" href="#main">Saltar al contenido</a>
+
+		<!-- Lucide icons (inline sprite) -->
+		<svg width="0" height="0" class="sr-only" aria-hidden="true">
+			<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></symbol>
+			<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+			<symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol>
+			<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+			<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+			<symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 20h.01M2 8.82a15 15 0 0 1 20 0M5 12.86a10 10 0 0 1 14 0M8.5 16.43a5 5 0 0 1 7 0" /></symbol>
+			<symbol id="i-tv" viewBox="0 0 24 24"><rect width="20" height="15" x="2" y="7" rx="2" /><path d="m17 2-5 5-5-5" /></symbol>
+			<symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /></symbol>
+			<symbol id="i-trees" viewBox="0 0 24 24"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0ZM7 16v6M13 19v3" /><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /></symbol>
+			<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol>
+			<symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></symbol>
+			<symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 8v4M12 16h.01" /></symbol>
+		</svg>
+
+		<!-- Navigation -->
+		<header class="site-header" id="siteHeader">
+			<div class="container header-inner">
+				<a class="brand" href="#top" aria-label="Alto las Flores, inicio">
+					<img src="assets/img/logo-160.png" alt="" width="32" height="32" />
+					<span>Alto las Flores</span>
+				</a>
+				<nav class="nav" id="siteNav" aria-label="Principal">
+					<ul class="nav-list">
+						<li><a class="nav-link" href="#imagenes">Imágenes</a></li>
+						<li><a class="nav-link" href="#informacion">Información</a></li>
+						<li><a class="nav-link" href="#contacto">Contacto</a></li>
+					</ul>
+					<a class="btn btn-primary btn-sm nav-cta" href="#contacto">Consultar</a>
+				</nav>
 				<button
-					class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+					class="btn btn-ghost btn-icon nav-toggle"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarResponsive"
-					aria-controls="navbarResponsive"
+					aria-controls="siteNav"
 					aria-expanded="false"
-					aria-label="Toggle navigation"
+					aria-label="Abrir menú"
 				>
-					Menú
-					<i class="fas fa-bars"></i>
+					<svg class="icon" aria-hidden="true"><use href="#i-menu" /></svg>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item mx-0 mx-lg-1">
-							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#imagenes"
-								>Imágenes</a
-							>
+			</div>
+		</header>
+
+		<main id="main">
+			<!-- Hero -->
+			<section class="hero" id="top">
+				<div class="container hero-inner">
+					<div class="hero-copy reveal">
+						<p class="eyebrow">Santa Rosa de Calamuchita · Córdoba</p>
+						<h1 class="display">Renovate con el aire de las sierras</h1>
+						<p class="lead">
+							Cabañas en una zona tranquila, rodeadas de parque y con pileta,
+							a minutos del centro y del río.
+						</p>
+						<div class="hero-actions">
+							<a class="btn btn-primary" href="#contacto">
+								Consultar disponibilidad
+								<svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+							</a>
+							<a class="btn btn-secondary" href="#imagenes">Ver imágenes</a>
+						</div>
+					</div>
+					<figure class="hero-media reveal">
+						<img
+							src="assets/img/portfolio/parque.webp"
+							alt="Parque de las cabañas con las sierras de fondo"
+							width="1600"
+							height="1067"
+							fetchpriority="high"
+						/>
+					</figure>
+				</div>
+				<div class="container">
+					<ul class="features reveal" aria-label="Servicios">
+						<li>
+							<svg class="icon" aria-hidden="true"><use href="#i-waves" /></svg>
+							<span>Pileta</span>
 						</li>
-						<li class="nav-item mx-0 mx-lg-1">
-							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#informacion"
-								>Información</a
-							>
+						<li>
+							<svg class="icon" aria-hidden="true"><use href="#i-trees" /></svg>
+							<span>Parque y juegos</span>
 						</li>
-						<li class="nav-item mx-0 mx-lg-1">
-							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contacto"
-								>Contacto</a
-							>
+						<li>
+							<svg class="icon" aria-hidden="true"><use href="#i-wifi" /></svg>
+							<span>Wi-Fi</span>
+						</li>
+						<li>
+							<svg class="icon" aria-hidden="true"><use href="#i-tv" /></svg>
+							<span>TV en cada cabaña</span>
 						</li>
 					</ul>
 				</div>
-			</div>
-		</nav>
-		<!-- Masthead-->
-		<header class="masthead bg-primary text-white text-center">
-			<div class="container d-flex align-items-center flex-column">
-				<!-- Masthead Avatar Image-->
-				<img
-					class="masthead-avatar mb-5"
-					src="assets/img/logo.png"
-					alt="..."
-				/>
-				<!-- Masthead Heading-->
-				<h1 class="masthead-heading text-uppercase mb-0">Alto las Flores</h1>
-				<!-- Icon Divider-->
-				<div class="divider-custom divider-light">
-					<div class="divider-custom-line"></div>
-					<div class="divider-custom-icon">
-						<i class="fa-solid fa-tree"></i>
-					</div>
-					<div class="divider-custom-line"></div>
-				</div>
-				<!-- Masthead Subheading-->
-				<p class="masthead-subheading font-weight-light mb-0">
-					Renovate con el aire de las sierras
-				</p>
-			</div>
-		</header>
-		<!-- Portfolio Section-->
-		<section class="page-section portfolio" id="imagenes">
-			<div class="container">
-				<!-- Portfolio Section Heading-->
-				<h2
-					class="page-section-heading text-center text-uppercase text-secondary mb-0"
-				>
-					Imágenes
-				</h2>
-				<!-- Icon Divider-->
-				<div class="divider-custom">
-					<div class="divider-custom-line"></div>
-					<div class="divider-custom-icon">
-						<i class="fa-solid fa-person-swimming"></i>
-					</div>
-					<div class="divider-custom-line"></div>
-				</div>
-				<!-- Portfolio Grid Items-->
-				<div class="row justify-content-center">
-					<!-- Portfolio Item 1-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal1"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/exterior2.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<!-- Portfolio Item 2-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal2"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/exterior.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<!-- Portfolio Item 3-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal3"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/exterior3.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<!-- Portfolio Item 4-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal4"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/juegos.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<!-- Portfolio Item 5-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal5"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/pileta2.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<!-- Portfolio Item 6-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal6"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/pileta3.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-                    <!-- Portfolio Item 7-->
-					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal7"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/habitacion1.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-                    <!-- Portfolio Item 8-->
-					<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal8"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/habitacion2.webp"
-								alt="..."
-							/>
-						</div>
-					</div>
-                    <!-- Portfolio Item 9-->
-					<div class="col-md-6 col-lg-4 mb-5">
-						<div
-							class="portfolio-item mx-auto"
-							data-bs-toggle="modal"
-							data-bs-target="#portfolioModal9"
-						>
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-							>
-								<div
-									class="portfolio-item-caption-content text-center text-white"
-								>
-									<i class="fas fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img
-								class="img-fluid"
-								src="assets/img/portfolio/interior.jpeg"
-								alt="..."
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- About Section-->
-		<section class="page-section bg-primary text-white mb-0" id="informacion">
-			<div class="container">
-				<!-- About Section Heading-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">
-					Información
-				</h2>
-				<!-- Icon Divider-->
-				<div class="divider-custom divider-light">
-					<div class="divider-custom-line"></div>
-					<div class="divider-custom-icon">
-						<i class="fa-solid fa-house"></i>
-					</div>
-					<div class="divider-custom-line"></div>
-				</div>
-				<!-- About Section Content-->
-				<div class="row">
-					<div class="col-lg-4 ms-auto">
-						<p class="lead">
-							Nos encontramos en una zona tranquila con el beneficio de un fácil acceso
-							tanto a compras diarias como a restaurants y el centro de la ciudad.
-							Contamos con Wi-Fi y televisión en todas las cabañas.
-						</p>
-					</div>
-					<div class="col-lg-4 me-auto">
-						<p class="lead">
-							<ul class="lead">
-								<li>Centro de Santa Rosa: 15 minutos.</li>
-								<li>Playa Mate de Luna: 5 minutos.</li>
-								<li>Villa General Belgrano: 20 minutos.</li>
-								<li>Villa Yacanto: 25 minutos.</li>
-							</ul>
-						</p>
-					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.091938870313!2d-64.5830511244286!3d-32.0667619739685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2bba3f9cf7ed9%3A0x4d12e95caa50e9aa!2sCABA%C3%91AS%20ALTO%20LAS%20FLORES!5e0!3m2!1ses!2sit!4v1697747646248!5m2!1ses!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-		</section>
-		<!-- Contact Section-->
-		<section class="page-section" id="contacto">
-			<div class="container">
-				<!-- Contact Section Heading-->
-				<h2
-					class="page-section-heading text-center text-uppercase text-secondary mb-0"
-				>
-					Contacto
-				</h2>
-				<!-- Icon Divider-->
-				<div class="divider-custom">
-					<div class="divider-custom-line"></div>
-					<div class="divider-custom-icon"><i class="fa-brands fa-whatsapp"></i></i></div>
-					<div class="divider-custom-line"></div>
-				</div>
-				<!-- Contact Section Form-->
-				<div class="row justify-content-center">
-					<div class="col-lg-8 col-xl-7">
-						<!-- * * * * * * * * * * * * * * *-->
-						<!-- * * SB Forms Contact Form * *-->
-						<!-- * * * * * * * * * * * * * * *-->
-						<!-- This form is pre-integrated with SB Forms.-->
-						<!-- To make this form functional, sign up at-->
-						<!-- https://startbootstrap.com/solution/contact-forms-->
-						<!-- to get an API token!-->
-						<form id="contactForm" data-sb-form-api-token="API_TOKEN">
-							<!-- Name input-->
-							<div class="form-floating mb-3">
-								<input
-									class="form-control"
-									id="name"
-									type="text"
-									placeholder="Ingrese su nombre"
-									data-sb-validations="required"
-								/>
-								<label for="name">Nombre</label>
-								<div class="invalid-feedback" data-sb-feedback="name:required">
-									El nombre es requerido.
-								</div>
-							</div>
-							<!-- Message input-->
-							<div class="form-floating mb-3">
-								<textarea
-									class="form-control"
-									id="message"
-									type="text"
-									placeholder="Ingrese su mensaje"
-									style="height: 10rem"
-									data-sb-validations="required"
-								></textarea>
-								<label for="message">Mensaje</label>
-								<div
-									class="invalid-feedback"
-									data-sb-feedback="message:required"
-								>
-									El mensaje es requerido.
-								</div>
-							</div>
-							<!-- Submit success message-->
-							<!---->
-							<!-- This is what your users will see when the form-->
-							<!-- has successfully submitted-->
-							<div class="d-none" id="submitSuccessMessage">
-								<div class="text-center mb-3">
-									<div class="fw-bolder">Form submission successful!</div>
-								</div>
-							</div>
-							<!-- Submit Button-->
-							<input
-								class="btn btn-primary btn-xl"
-								id="submitButton"
-								type="submit"
-								value="Enviar por WhatsApp"
-							>
-								
-							</input>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-- Copyright Section-->
-		<div class="copyright py-4 text-center text-white">
-			<div class="container">
-				<small>Copyright &copy; Alto las Flores</small>
-			</div>
-		</div>
-		<!-- Portfolio Modals-->
-		<!-- Portfolio Modal 1-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal1"
-			tabindex="-1"
-			aria-labelledby="portfolioModal1"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/exterior2.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 2-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal2"
-			tabindex="-1"
-			aria-labelledby="portfolioModal2"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
+			</section>
 
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/exterior.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
+			<!-- Gallery -->
+			<section class="section" id="imagenes" aria-labelledby="imagenes-title">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Imágenes</p>
+						<h2 id="imagenes-title">Conocé el lugar</h2>
+					</div>
+					<ul class="gallery">
+						<li class="gallery-item gallery-item--wide">
+							<button type="button" class="gallery-btn" data-index="0">
+								<img src="assets/img/portfolio/pileta3.webp" alt="Pileta con cerco y reposeras" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="1">
+								<img src="assets/img/portfolio/exterior3.webp" alt="Frente de una cabaña de dos plantas" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="2">
+								<img src="assets/img/portfolio/interior.jpeg" alt="Living comedor con cocina y escalera caracol" width="946" height="631" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="3">
+								<img src="assets/img/portfolio/habitacion1.webp" alt="Habitación con cama matrimonial" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="4">
+								<img src="assets/img/portfolio/habitacion2.webp" alt="Habitación con cucheta y cama individual" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="5">
+								<img src="assets/img/portfolio/pileta2.webp" alt="Pileta y solárium con reposeras" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="6">
+								<img src="assets/img/portfolio/exterior.webp" alt="Cabañas entre árboles y parque" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="7">
+								<img src="assets/img/portfolio/juegos.webp" alt="Juegos para chicos y cochera techada" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+						<li class="gallery-item">
+							<button type="button" class="gallery-btn" data-index="8">
+								<img src="assets/img/portfolio/exterior2.webp" alt="Entrada al complejo Alto las Flores" width="1600" height="1067" loading="lazy" />
+							</button>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Info -->
+			<section class="section section--muted" id="informacion" aria-labelledby="info-title">
+				<div class="container info-grid">
+					<div class="info-copy">
+						<p class="eyebrow">Información</p>
+						<h2 id="info-title">Tranquilidad, cerca de todo</h2>
+						<p class="body-lg">
+							Nos encontramos en una zona tranquila con el beneficio de un fácil
+							acceso tanto a compras diarias como a restaurantes y el centro de la
+							ciudad. Contamos con Wi-Fi y televisión en todas las cabañas.
+						</p>
+						<h3 class="label-title">Distancias</h3>
+						<dl class="distances">
+							<div><dt>Playa Mate de Luna</dt><dd>5 min</dd></div>
+							<div><dt>Centro de Santa Rosa</dt><dd>15 min</dd></div>
+							<div><dt>Villa General Belgrano</dt><dd>20 min</dd></div>
+							<div><dt>Villa Yacanto</dt><dd>25 min</dd></div>
+						</dl>
+					</div>
+					<div class="map">
+						<iframe
+							title="Ubicación de Cabañas Alto las Flores en Google Maps"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.091938870313!2d-64.5830511244286!3d-32.0667619739685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2bba3f9cf7ed9%3A0x4d12e95caa50e9aa!2sCABA%C3%91AS%20ALTO%20LAS%20FLORES!5e0!3m2!1ses!2sit!4v1697747646248!5m2!1ses!2sit"
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+							allowfullscreen
+						></iframe>
+						<a
+							class="map-link"
+							href="https://www.google.com/maps/search/?api=1&query=Caba%C3%B1as+Alto+las+Flores+Santa+Rosa+de+Calamuchita"
+							target="_blank"
+							rel="noopener"
+						>
+							<svg class="icon" aria-hidden="true"><use href="#i-map-pin" /></svg>
+							Abrir en Google Maps
+						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 3-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal3"
-			tabindex="-1"
-			aria-labelledby="portfolioModal3"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
+			</section>
+
+			<!-- Contact -->
+			<section class="section" id="contacto" aria-labelledby="contacto-title">
+				<div class="container contact-grid">
+					<div class="contact-copy">
+						<p class="eyebrow">Contacto</p>
+						<h2 id="contacto-title">Escribinos por WhatsApp</h2>
+						<p class="body-lg">
+							Contanos las fechas y cuántas personas son. Te respondemos con
+							disponibilidad y tarifas.
+						</p>
 					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/exterior3.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
+					<form class="form" id="contactForm" novalidate>
+						<div class="field">
+							<label for="name">Nombre</label>
+							<input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error" />
+							<p class="field-error" id="name-error" hidden>
+								<svg class="icon" aria-hidden="true"><use href="#i-alert" /></svg>
+								Ingresá tu nombre.
+							</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 4-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal4"
-			tabindex="-1"
-			aria-labelledby="portfolioModal4"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/juegos.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
+						<div class="field">
+							<label for="message">Mensaje</label>
+							<textarea id="message" name="message" rows="5" required aria-describedby="message-hint message-error"></textarea>
+							<p class="field-hint" id="message-hint">Ej.: fechas de llegada y salida, cantidad de personas.</p>
+							<p class="field-error" id="message-error" hidden>
+								<svg class="icon" aria-hidden="true"><use href="#i-alert" /></svg>
+								Escribí tu mensaje.
+							</p>
 						</div>
-					</div>
+						<button class="btn btn-primary btn-block" id="submitButton" type="submit">
+							<svg class="icon" aria-hidden="true"><use href="#i-message" /></svg>
+							Enviar por WhatsApp
+						</button>
+					</form>
 				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<span>© <span id="year">2026</span> Alto las Flores</span>
+				<span>Santa Rosa de Calamuchita, Córdoba</span>
 			</div>
-		</div>
-		<!-- Portfolio Modal 5-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal5"
-			tabindex="-1"
-			aria-labelledby="portfolioModal5"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/pileta2.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		</footer>
+
+		<!-- Lightbox -->
+		<dialog class="lightbox" id="lightbox" aria-label="Galería de imágenes">
+			<div class="lightbox-inner">
+				<button class="lightbox-btn lightbox-close" type="button" aria-label="Cerrar">
+					<svg class="icon" aria-hidden="true"><use href="#i-x" /></svg>
+				</button>
+				<button class="lightbox-btn lightbox-prev" type="button" aria-label="Imagen anterior">
+					<svg class="icon" aria-hidden="true"><use href="#i-chevron-left" /></svg>
+				</button>
+				<figure class="lightbox-figure">
+					<img id="lightboxImg" src="" alt="" />
+					<figcaption id="lightboxCaption"></figcaption>
+				</figure>
+				<button class="lightbox-btn lightbox-next" type="button" aria-label="Imagen siguiente">
+					<svg class="icon" aria-hidden="true"><use href="#i-chevron-right" /></svg>
+				</button>
 			</div>
-		</div>
-		<!-- Portfolio Modal 6-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal6"
-			tabindex="-1"
-			aria-labelledby="portfolioModal6"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/pileta3.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- Portfolio Modal 7-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal7"
-			tabindex="-1"
-			aria-labelledby="portfolioModal7"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/habitacion1.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- Portfolio Modal 8-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal8"
-			tabindex="-1"
-			aria-labelledby="portfolioModal8"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/habitacion2.webp"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- Portfolio Modal 9-->
-		<div
-			class="portfolio-modal modal fade"
-			id="portfolioModal9"
-			tabindex="-1"
-			aria-labelledby="portfolioModal9"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header border-0">
-						<button
-							class="btn-close"
-							type="button"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Image-->
-									<img
-										class="img-fluid rounded mb-5"
-										src="assets/img/portfolio/interior.jpeg"
-										alt="..."
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Bootstrap core JS-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Core theme JS-->
+		</dialog>
+
 		<script src="js/scripts.js"></script>
-		<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-		<!-- * *                               SB Forms JS                               * *-->
-		<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-		<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-		<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 	</body>
 </html>
